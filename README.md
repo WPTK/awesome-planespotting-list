@@ -1,14 +1,19 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/WPTK/cool-adsbx-links)  [![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/) ![Static Badge](https://img.shields.io/badge/Contributions-Welcome-green)
 
+# Awesome Planespotting List
+
+A curated collection of specialized aircraft tracking links for avgeeks of all kinds. This repo provides direct links to track specific categories of aircraft across multiple aggregators - from emergency response aircraft fightingfires to military intelligence (ISR), law enforcement helicopters, and UN flights!
+
+Each category includes filtered links for ADSBexchange, ADSB.lol, ADSB.fi, and Airplanes.live, making it easy to spot interesting aircraft movements around the world. Truthfully, this will work for any site running `tar1090`. If I'm missing a site, submit an issue and let me know! 
+
 
 ### Future Plans
 
- - Type code filters (modifications of what's found on the [Map Help](https://adsbexchange.com/map-help/) page.)
- - More cool links (with your help!) 
- - FAQ
- - Continual maintenance to make sure lists are accurate and updated. 
+ - More cool links (with your help! Submit a pull request!)
+ - FAQ (maybe?)
+ - Continual maintenance to make sure lists are accurate and updated. (This is a big one!) 
 
-# ADBS Links
+# Awesome Planespotting List
 
 | **Country**                        | **State**      | **Description**                                                                                                          | **ADSBx**                 | **ADSB.lol**              | **ADSB.fi**               | **ADSB.one**              |
 |------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------|---------------------------|---------------------------|---------------------------|
@@ -108,7 +113,7 @@
 | Boeing 757 & 767                         | `/?filtertype=B75.\|B76.` |
 | Boeing 777                               | `/?filtertype=B77.` |
 | Boeing 787                               | `/?filtertype=B78.` |
-| Airbus A320 family (CEO + NEO)           | `/?filtertype=A32.\|A2.N` |
+| Airbus A320 family                       | `/?filtertype=A32.\|A2.N` |
 | Airbus A220                              | `/?filtertype=BCS.` |
 | Airbus A330                              | `/?filtertype=A33.` |
 | Airbus A340                              | `/?filtertype=A34.` |
