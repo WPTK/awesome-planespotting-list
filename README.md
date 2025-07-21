@@ -1,6 +1,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/WPTK/cool-adsbx-links)  [![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/) ![Static Badge](https://img.shields.io/badge/Contributions-Welcome-green) 
 
-# Awesome Planespotting List
+# What is this?
 
 A curated collection of specialized aircraft tracking links for avgeeks of all kinds. This repo provides direct links to track specific categories of aircraft across multiple aggregators - from emergency response aircraft fightingfires to military intelligence (ISR), law enforcement helicopters, and UN flights!
 
