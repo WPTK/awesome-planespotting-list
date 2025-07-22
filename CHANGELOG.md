@@ -5,12 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### [3.0.0] - 2025-07-18
 ### Added
 - Human-friendly project description explaining the purpose of curated airplane tracking links
 - Comprehensive documentation of all ADSB tracking platforms
 - Clear explanation of ICAO code filtering for focused aircraft tracking
 
-## [2.0.0] - 2024-01-XX
+## [2.0.0] - 2024-01-25
 
 ### Added
 - Reference link system for easier maintenance and editing
@@ -31,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Resolved file corruption issues with duplicate reference links
 - Fixed missing and malformed reference definitions
 
-## [1.0.0] - 2023-XX-XX
+## [1.0.0] - 2023-05-04
 
 ### Added
 - Initial airplane spotting link collection
@@ -64,10 +65,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **v2.0.0**: Major restructure with reference links, multi-platform support, and improved maintenance
 - **v1.0.0**: Established stable link collection with comprehensive aircraft coverage
 - **v0.1.0**: Initial project creation and concept development
-
-## Contributing
-
-This project has evolved through community contributions and feedback. The reference link system introduced in v2.0.0 makes it significantly easier to maintain and update tracking links while ensuring consistency across all platforms.
 
 ## Technical Notes
 
