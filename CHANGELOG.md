@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.3.0] - 2026-09-06
+
+### Added
+- 4 new tracked categories, each with all 4 platform links: Coast Guard aircraft (458), drones/UAS (262), VIP & government transport (289), and worldwide aerial firefighting (356) — sourced from [`sdr-enthusiasts/plane-alert-db`](https://github.com/sdr-enthusiasts/plane-alert-db), a community-maintained, ODbL-licensed database (same license as this repo).
+- A "Contents" section at the top of the README linking the main sections.
+- A "Credits" section attributing the new categories' data source.
+
 ## [3.2.0] - 2026-09-06
 
 ### Added
