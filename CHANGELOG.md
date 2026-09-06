@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.0] - 2026-09-06
+
+### Fixed
+- **Restored lost aircraft data**: the "Air Ambulances / Life Flights" and "Flights associated with the United Nations" rows had been silently overwritten with a duplicate of the "Law Enforcement Aircraft" ICAO list during the 2.0.0 reference-link rewrite. Recovered the original 808-aircraft Air Ambulances list and 24-aircraft UN list from project history and regenerated all four platform links for each.
+- Removed 3 dead/duplicate reference-link definitions left over from the same rewrite.
+- Fixed two Airplanes.live links pointing at `airplanes.live` instead of the working `globe.airplanes.live` pattern used everywhere else.
+- Fixed table header mislabeling the Airplanes.live column as "ADSB.one".
+- Deduplicated repeated ICAO codes in the LA/Palisades fires row.
+- Fixed the "last commit" badge pointing at a stale repo name.
+- Fixed two typos in the intro text.
+
 ## [3.0.0] - 2025-07-18
 
 ### Added
