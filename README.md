@@ -118,5 +118,50 @@ Each category includes filtered links for ADSBexchange, ADSB.lol, ADSB.fi, and A
 | Airbus A380                              | `/?filtertype=A38.` |
 | COMAC C919 / ARJ‑21                      | `/?filtertype=C919\|ARJ.` |
 
+---
+
+### Database Flag Filters (use with `filterDbFlag=`)
+
+Every `tar1090`-based site flags aircraft in its own database as military, PIA (Privacy ICAO Address — an anonymized/opted-out registration), or LADD (Limiting Aircraft Data Displayed — an FAA privacy program). This filters live, across the whole fleet, with no curated ICAO list needed.
+
+| Category                                          | Filter snippet |
+|----------------------------------------------------|----------------|
+| Military aircraft only                              | `/?filterdbflag=military` |
+| PIA (privacy ICAO address) aircraft                 | `/?filterdbflag=pia` |
+| LADD (limiting aircraft data displayed) aircraft    | `/?filterdbflag=ladd` |
+| Military + PIA + LADD together ("hidden fleet")     | `/?filterdbflag=military,pia,ladd` |
+
+---
+
+### Altitude, Range & Callsign Filters
+
+| Use case                                                  | Filter snippet |
+|-------------------------------------------------------------|----------------|
+| Below 1,000 ft (just departed / about to land)               | `/?filteraltmax=1000` |
+| Above FL450 / 45,000 ft (high-altitude ISR, research)         | `/?filteraltmin=45000` |
+| Between 10,000-20,000 ft                                       | `/?filteraltmin=10000&filteraltmax=20000` |
+| Callsigns starting with `RCH` (USAF Air Mobility Command "Reach" flights) | `/?filtercallsign=^(RCH)` |
+| Limit rendered tracks to a distance from the receiver (unit depends on the site's settings) | `/?filtermaxrange=100` |
+
+**Combine any filters together with `&`** — e.g. all military aircraft below 10,000 ft: `/?filterdbflag=military&filteraltmax=10000`.
+
+All of the above (and the two tables before it) are documented in [`wiedehopf/tar1090`'s query-parameter reference](https://github.com/wiedehopf/tar1090/blob/master/README-query.md), the map software every link in this repo runs on.
+
+---
+
+## Build your own category link
+
+Every link in the table above follows the same pattern — pick it apart and you can build a link for any category not yet on this list:
+
+```
+https://globe.adsbexchange.com/?icao=HEX1,HEX2,HEX3,...
+```
+
+1. Collect the ICAO hex codes (24-bit Mode S addresses, e.g. `A835AF`) for the aircraft you want to track.
+2. Join them with commas into one `icao=` parameter.
+3. Swap the domain for whichever tracker you prefer — `globe.adsbexchange.com`, `adsb.lol`, `globe.adsb.fi`, or `globe.airplanes.live` all accept the same `icao=` list.
+4. Optionally stack on any filter from the tables above with `&`.
+
+Found (or built) a category that isn't here yet? Open an issue or a pull request — see Future Plans above.
 
 [![Hits](https://hits.sh/github.com/WPTK/awesome-planespotting-list.svg?style=for-the-badge&label=views&logo=markdown)](https://hits.sh/github.com/WPTK/awesome-planespotting-list/)

@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.0] - 2026-09-06
+
+### Added
+- "Database Flag Filters" table documenting `filterDbFlag=` (military / PIA / LADD, live across the whole fleet, no curated ICAO list required).
+- "Altitude, Range & Callsign Filters" table documenting `filterAltMin=`, `filterAltMax=`, `filterCallSign=`, and `filterMaxRange=`.
+- "Build your own category link" how-to section explaining the `icao=` link pattern so contributors can construct and submit new categories.
+- All new filter parameters verified against the upstream [`wiedehopf/tar1090` query-parameter reference](https://github.com/wiedehopf/tar1090/blob/master/README-query.md), the software every linked tracker runs on.
+
 ## [3.1.0] - 2026-09-06
 
 ### Fixed
